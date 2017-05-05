@@ -2,7 +2,7 @@
  * @name: Array.prototype.forEach
  * @description: 对数组的每个元素执行一次提供的函数。
  * @author: lizijie
- * @update: 2017-05-03
+ * @update: 2017-05-05
  */
 
 Array.prototype.forEach = function(iteratee, context) {

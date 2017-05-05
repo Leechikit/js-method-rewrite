@@ -2,13 +2,16 @@
 
 ## Array method
 
-* [Array.isArray](https://codepen.io/leechikit/pen/Gmvdyj)
-* [Array.of](https://codepen.io/leechikit/pen/yboRpd)
-* [Array.prototype.slice](https://codepen.io/leechikit/pen/PmjrNr)
-* [Array.prototype.forEach](https://codepen.io/leechikit/pen/XRaWbR)
-* [Array.prototype.concat](https://codepen.io/leechikit/pen/gWxzmM)
-* [Array.prototype.reduce](https://codepen.io/leechikit/pen/dWzemP)
-* [Array.prototype.reverse](https://codepen.io/leechikit/pen/YVxJqZ)
-* [Array.prototype.copyWithin](https://codepen.io/leechikit/pen/dWzwgo)
+* Array.isArray
+* Array.of
+* Array.prototype.slice
+* Array.prototype.forEach
+* Array.prototype.concat
+* Array.prototype.reduce
+* Array.prototype.reverse
+* Array.prototype.copyWithin
 * Array.prototype.find
 * Array.prototype.findIndex
+* Array.prototype.indexOf
+* Array.prototype.lastIndexOf
+* Array.prototype.fill
