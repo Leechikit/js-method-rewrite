@@ -1,7 +1,7 @@
 /**
  * @name: Array.prototype.slice
  * @description: 返回一个从开始到结束（不包括结束）选择的数组的一部分浅拷贝到一个新数组对象。
- * @author: lizijie(lizijie@yy.com)
+ * @author: lizijie
  * @update: 2017-05-03
  */
 

@@ -1,7 +1,7 @@
 /**
  * @name: Array.prototype.concat
  * @description: 合并两个或多个数组。此方法不会更改现有数组，而是返回一个新数组。
- * @author: lizijie(lizijie@yy.com)
+ * @author: lizijie
  * @update: 2017-05-04
  */
 
