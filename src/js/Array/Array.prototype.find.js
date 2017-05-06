@@ -5,12 +5,14 @@
  * @update: 2017-05-04
  */
 
-Array.prototype.find = function(callback, thisArg) {
-	let cb = typeof callback == 'function' ? callback : function() {};
+Array.prototype.find = function(iteratee, thisArg) {
+	if (typeof iteratee !== "function") {
+		throw new TypeError(iteratee + ' is not a function')
+	}
 	let arr = this;
 	let result;
 	for (let i = 0, len = arr.length; i < len; i++) {
-		if (cb.call(thisArg, arr[i], i, arr)) {
+		if (iteratee.call(thisArg, arr[i], i, arr)) {
 			result = arr[i];
 			break;
 		}

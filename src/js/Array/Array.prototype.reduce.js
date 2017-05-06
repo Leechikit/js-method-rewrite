@@ -5,12 +5,14 @@
  * @update: 2017-05-04
  */
 
-Array.prototype.reduce = function(callback, initialValue) {
+Array.prototype.reduce = function(iteratee, initialValue) {
+	if (typeof iteratee !== "function") {
+		throw new TypeError(iteratee + ' is not a function')
+	}
 	let arr = this;
 	let len = arr.length;
 	let result;
 	let index;
-	let cb = typeof callback == 'function' ? callback : function() {};
 	if (initialValue != void 0) {
 		result = initialValue;
 		index = 0;
@@ -21,7 +23,7 @@ Array.prototype.reduce = function(callback, initialValue) {
 
 	function loop() {
 		if (len > 0) {
-			result = cb.call(null, result, arr[index]);
+			result = iteratee.call(null, result, arr[index]);
 			len--
 			index++;
 			loop();
