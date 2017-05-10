@@ -12,6 +12,8 @@ require('./js/Array/Array.prototype.findIndex.js');
 require('./js/Array/Array.prototype.indexOf.js');
 require('./js/Array/Array.prototype.lastIndexOf.js');
 require('./js/Array/Array.prototype.fill.js');
+require('./js/Array/Array.prototype.join.js');
+require('./js/Array/Array.prototype.every.js');
 // let arr = [1,2,3];
 // console.time('forEach');
 // for(var i = 0;i<100;i++){
