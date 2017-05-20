@@ -5,7 +5,7 @@
 * Array.isArray
 * Array.of
 * Array.prototype.slice
-* Array.prototype.forEach
+* [Array.prototype.forEach](https://github.com/Leechikit/js-method-rewrite/issues/1)
 * Array.prototype.concat
 * Array.prototype.reduce
 * Array.prototype.reverse
