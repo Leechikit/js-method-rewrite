@@ -11,7 +11,7 @@ Array.prototype.every = function(iteratee, thisArg) {
 	}
 	let result = true;
 	for (let i = 0, len = this.length; i < len; i++) {
-		if (iteratee.call(thisArg, this[i], i.this) === false) {
+		if (iteratee.call(thisArg, this[i], i, this) === false) {
 			result = false;
 			break;
 		}
