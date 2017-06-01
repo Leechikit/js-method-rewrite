@@ -8,7 +8,7 @@
 Array.prototype.indexOf = function(searchElement, fromIndex = 0) {
 	let arr = this;
 	let result = -1;
-	let start = fromIndex < 0 ? fromIndex + arr.length : fromIndex;
+	let start = Math.max(fromIndex < 0 ? fromIndex + arr.length : fromIndex, 0);
 	for (let i = start, len = arr.length; i < len; i++) {
 		if (arr[i] === searchElement) {
 			result = i;
