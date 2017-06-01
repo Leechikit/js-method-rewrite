@@ -8,6 +8,7 @@
 Function.prototype.apply = function(thisArg, argsArray) {
 	let context = thisArg || window;
 	let result;
+	context = Object(context);
 	context.fn = this;
 	if (argsArray && argsArray.length > 0) {
 		let arr = [];

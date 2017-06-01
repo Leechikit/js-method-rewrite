@@ -18,6 +18,7 @@ require('./js/Array/Array.prototype.splice.js');
 require('./js/Array/Array.prototype.filter.js');
 require('./js/Array/Array.prototype.reduceRight.js');
 require('./js/Array/Array.prototype.includes.js');
+require('./js/Array/Array.prototype.map.js');
 require('./js/Function/Function.prototype.apply.js');
 require('./js/Function/Function.prototype.call.js');
 require('./js/Function/Function.prototype.bind.js');
