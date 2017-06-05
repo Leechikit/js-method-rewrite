@@ -6,8 +6,8 @@
  */
 
 Array.prototype.push = function(...args) {
-	let index = this.length - 1;
+	let lastIndex = this.length - 1;
 	for(let i of args){
-		this[++index] = i;
+		this[++lastIndex] = i;
 	}
 }

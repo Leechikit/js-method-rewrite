@@ -21,6 +21,7 @@ import './js/Array/Array.prototype.includes.js';
 import './js/Array/Array.prototype.map.js';
 import './js/Array/Array.prototype.some.js';
 import './js/Array/Array.prototype.push.js';
+import './js/Array/Array.prototype.pop.js';
 import './js/Function/Function.prototype.apply.js';
 import './js/Function/Function.prototype.call.js';
 import './js/Function/Function.prototype.bind.js';
