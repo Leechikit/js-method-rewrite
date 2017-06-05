@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
 var fs = require('fs');
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var config = require('../config').default;
 var host = '127.0.0.1';
 var port = config.port;
@@ -13,15 +12,7 @@ module.exports = {
         //代码热替换
         new webpack.HotModuleReplacementPlugin(),
         //允许错误不打断程序
-        new webpack.NoErrorsPlugin(),
-        //浏览器同步测试
-        new BrowserSyncPlugin({
-            host: host,
-            port: 3300,
-            proxy: publicPath
-        },{
-            reload:false
-        })
+        new webpack.NoErrorsPlugin()
     ],
     devtool: 'source-map',
     //页面入口文件配置

@@ -8,7 +8,7 @@
 Array.prototype.pop = function() {
 	let lastIndex = this.length - 1;
 	let result;
-	if (lastIndex > 0) {
+	if (lastIndex >= 0) {
 		result = this[lastIndex];
 		this[lastIndex] = null;
 		this.length = lastIndex;

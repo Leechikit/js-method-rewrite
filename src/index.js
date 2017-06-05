@@ -21,12 +21,9 @@ import './js/Array/Array.prototype.includes.js';
 import './js/Array/Array.prototype.map.js';
 import './js/Array/Array.prototype.some.js';
 import './js/Array/Array.prototype.push.js';
-// import './js/Array/Array.prototype.pop.js';
+import './js/Array/Array.prototype.pop.js';
 import './js/Array/Array.prototype.unshift.js';
+import './js/Array/Array.prototype.shift.js';
 import './js/Function/Function.prototype.apply.js';
 import './js/Function/Function.prototype.call.js';
 import './js/Function/Function.prototype.bind.js';
-
-let a = [1,2,3];
-a.unshift(4,5,6);
-console.log(a);
