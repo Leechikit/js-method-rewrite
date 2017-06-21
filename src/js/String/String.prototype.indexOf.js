@@ -5,26 +5,30 @@
  * @update: 2017-06-20
  */
 
-let indexOf = function(str, searchElement, fromIndex = 0) {
-	// let str = this;
+let indexOf = String.prototype.indexOf = function(searchElement, fromIndex = 0) {
+	let str = this;
 	let result = -1;
 	let strLen = str.length;
 	let searchLen = searchElement.length;
-	let start = Math.max(fromIndex < 0 ? fromIndex + strLen : fromIndex, 0);
+	let start = fromIndex < 0 ? 0 : fromIndex
 	let needle = 0;
-	// debugger;
-	while(start <= strLen){
-		if(needle >= searchLen){
-			result = start - needle;
-			break;
+	if (fromIndex <= strLen) {
+		while (start <= strLen) {
+			if (needle >= searchLen) {
+				result = start - needle;
+				break;
+			}
+			if (str[start] != searchElement[needle]) {
+				start -= needle;
+				needle = -1;
+			}
+			needle++;
+			start++;
 		}
-		if(str[start] != searchElement[needle]){
-			start -= needle;
-			needle = -1;
-		}
-		needle++;
-		start++;
+	}else{
+		result = fromIndex;
 	}
+
 	return result;
 }
 

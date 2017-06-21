@@ -1,3 +1,2 @@
-import indexOf from './String/String.prototype.indexOf.js';
-
-exports.indexOf = indexOf
+import './String/String.prototype.indexOf.js';
+import './String/String.prototype.lastIndexOf.js';
